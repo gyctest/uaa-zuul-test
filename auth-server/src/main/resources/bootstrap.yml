@@ -11,13 +11,13 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    platform: postgres
-    url: jdbc:postgresql://192.168.1.140:5432/auth
-    username: wang
-    password: yunfei
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://127.0.0.1:3307/init?characterEncoding=utf-8
+    username: root
+    password:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
   redis:
-    host: 192.168.1.140
+    host: 192.168.70.235
 
 server:
   port: 9999
